@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="signature" src="assets/C.png">
+        <img id="bricks" src="assets/bricks.png">
+        <img id="skybox"
+        src="assets/night.jpg">
+        <a-asset-item id="aflower" src="assets/flower.glb"></a-asset-item>
+      </a-assets>
+     
+
+      <a-sphere position="-2 0.5 -3" rotation="0 45 0" radius="0.5" color="#4CC3D9"></a-sphere>
+
+      <a-box position="0 0.5 -3" scale="1 1 1" color="red"></a-box>
+
+      <a-torus position="2 1.5 -3" radius="0.5" radius-tubular="0.1"> </a-torus>
+
+      <a-image position="0 2.75 -3" rotation="0 0 0" material="src:#signature"</a-assets>
+
+      <a-image position="-2 2.75 -3" rotation="0 -15 0" material="src:#signature"></a-image>
+      
+      <a-plane position="0 0 20" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="src: #bricks"></a-plane>
+
+       <a-gltf-model src="#aflower" position=" -2 -10 -9" scale="10 10 10"> </a-gltf-model>
+
+       <a-gltf-model src="#aflower" position=" -10 -20 15" scale="10 10 10"> </a-gltf-model>
+
+
+    
+      <a-sky src="#skybox"></a-sky>
+    </a-scene>
+  </body>
+</html>   
